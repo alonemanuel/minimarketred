@@ -1,0 +1,39 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0%;
+  height: 100vh;
+  font-size: 1.6rem;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/* layout */
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  grid-template-rows: 5rem 1fr 5rem;
+  height: 100%;
+  grid-template-columns: 1fr;
+}
+
+header {
+  grid-area: header;
+  background-color: #000000;
+}   
+
+main {
+  grid-area: main;
+}
+
+footer {
+  background-color: #000000;
+  color: #ffffff;
+  grid-area: footer;
+}
