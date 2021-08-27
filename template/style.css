@@ -26,7 +26,7 @@ body {
 header {
   grid-area: header;
   background-color: #000000;
-}   
+}
 
 main {
   grid-area: main;
@@ -36,4 +36,39 @@ footer {
   background-color: #000000;
   color: #ffffff;
   grid-area: footer;
+}
+
+/* common */
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff8000;
+}
+
+/* header */
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header a{
+    color: #ffffff;
+    padding: 1rem;
+}
+
+a.brand{
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* footer */
+.row.center{
+    justify-content: center;
 }
