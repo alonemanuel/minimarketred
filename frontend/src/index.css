@@ -93,11 +93,13 @@ a.brand{
 }
 .card-body{
     padding: 1rem;
+    
 }
 .card-body>*{
     margin-bottom: 0.5rem;
 
 }
+
 
 /* img */
 img{
@@ -109,6 +111,17 @@ img.medium{
     width: 100%;
 }
 
+img.small{
+  max-width: 19rem;
+  width: 100%;
+}
+
 .price{
     font-size: 2rem;
+}
+
+p.description{
+  max-width: 15rem;
+  width: 100%;
+  color: #808080;
 }

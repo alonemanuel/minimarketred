@@ -1,12 +1,12 @@
-
+import data from "./data";
 function App() {
   return (
-    <div class="grid-container">
+    <div className="grid-container">
 
-      <header class="row">
+      <header className="row">
         <div>
 
-          <a class="brand" href="index.html">MINIMARKETred</a>
+          <a className="brand" href="index.html">MINIMARKETred</a>
 
         </div>
         <div>
@@ -16,90 +16,30 @@ function App() {
         </div>
       </header>
       <main>
-        <div class="row center">
-          <div class="card">
-            <a href="product.html">
-              <img class="medium" src="./images/product_001.jpg" alt="product"></img>
-            </a>
-            <div class="card-body">
-              <a href="product.html">
-                <h2>A5 Riso Print - 'The Anger'</h2>
-              </a>
-              <div class="price">
-                120$
+        <div className="row center">
+          {data.products.map(
+            (product) => (
+              <div className="card">
+                <a href="product.html">
+                  <img className="small" src={product.imageFilename} alt="product" />
+                </a>
+                <div className="card-body">
+                  <a href="product.html">
+                    <h2>{product.name}</h2>
+                  </a>
+                  <div className="price">
+                    {product.price + ' NIS'}
+                  </div>
+                  <h3 className="creator">{product.creator}</h3>
+                  <p className="description">{product.description}</p>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="card">
-            <a href="product.html">
-              <img class="medium" src="./images/product_001.jpg" alt="product"></img>
-            </a>
-            <div class="card-body">
-              <a href="product.html">
-                <h2>A5 Riso Print - 'The Anger'</h2>
-              </a>
-              <div class="price">
-                120$
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <a href="product.html">
-              <img class="medium" src="./images/product_001.jpg" alt="product"></img>
-            </a>
-            <div class="card-body">
-              <a href="product.html">
-                <h2>A5 Riso Print - 'The Anger'</h2>
-              </a>
-              <div class="price">
-                120$
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <a href="product.html">
-              <img class="medium" src="./images/product_001.jpg" alt="product"></img>
-            </a>
-            <div class="card-body">
-              <a href="product.html">
-                <h2>A5 Riso Print - 'The Anger'</h2>
-              </a>
-              <div class="price">
-                120$
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <a href="product.html">
-              <img class="medium" src="./images/product_001.jpg" alt="product" />
-            </a>
-            <div class="card-body">
-              <a href="product.html">
-                <h2>A5 Riso Print - 'The Anger'</h2>
-              </a>
-              <div class="price">
-                120$
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <a href="product.html">
-              <img class="medium" src="./images/product_001.jpg" alt="product" />
-            </a>
-            <div class="card-body">
-              <a href="product.html">
-                <h2>A5 Riso Print - 'The Anger'</h2>
-              </a>
-              <div class="price">
-                120$
-              </div>
-            </div>
-          </div>
-
+            )
+          )}
         </div>
 
       </main>
-      <footer class="row center">
+      <footer className="row center">
         all rights reserved
       </footer>
     </div>
