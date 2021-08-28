@@ -10,6 +10,10 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
+h2{
+    font-size: 2rem;
+}
+
 /* layout */
 
 .grid-container {
@@ -51,10 +55,10 @@ a:hover {
 /* header */
 
 .row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 header a{
@@ -67,8 +71,38 @@ a.brand{
     font-weight: bold;
     color: #ffffff;
 }
-
-/* footer */
 .row.center{
     justify-content: center;
+}
+
+/* footer */
+
+/* card */
+.card{
+    border-radius: 0.5rem;
+    border: #c0c0c0 0.1rem solid;
+    background-color: #f8f8f8;
+    margin: 1rem;
+    
+}
+.card-body{
+    padding: 1rem;
+}
+.card-body>*{
+    margin-bottom: 0.5rem;
+
+}
+
+/* img */
+img{
+    border-radius: 0.5rem;
+}
+
+img.medium{
+    max-width: 29rem;
+    width: 100%;
+}
+
+.price{
+    font-size: 2rem;
 }
