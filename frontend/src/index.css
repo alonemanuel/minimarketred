@@ -125,3 +125,7 @@ p.description{
   width: 100%;
   color: #808080;
 }
+
+p.quantityLeft{
+  font-style: italic;
+}
